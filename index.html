@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment App by Gulnoza</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav_content">
+          <h3 class="paymentLogo">Payments App</h3>
+          <button class="logOut none">Chiqish</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <main>
+        <!-- <p>Welcome to Payments App</p> -->
+        <div class="my_card">
+          <h5>Mening kartam</h5>
+          <div class="credit_card">
+            <h6>Credit Card</h6>
+            <img src="./img/cardQr.svg" alt="cardQr" />
+            <span class="cardBalance">$ 0</span>
+            <h6 class="cardOwner">Name Surname</h6>
+            <div class="number">
+              <span class="cardNumber">1234 5678 91** ****</span>
+              <span class="expiryDate">10/26</span>
+            </div>
+          </div>
+          <div class="send_money">
+            <h5>Pul o’tkazish</h5>
+            <input
+              type="number"
+              placeholder="Karta raqami"
+              class="payee sendinput"
+            />
+            <input type="number" placeholder="Summa" class="amount sendinput" />
+            <button class="send">Yuborish</button>
+          </div>
+        </div>
+        <div class="history">
+          <h5>O’tkazmalar tarixi</h5>
+          <div class="control">
+            <div class="incomeBox"><span class="income">+0 $</span></div>
+            <div class="outgoingsBox">
+              <span class="outgoings">-0 $</span>
+            </div>
+          </div>
+          <ul class="history_ul"></ul>
+        </div>
+      </main>
+
+      <div class="logInbox sign">
+        <input type="text" placeholder="Login" class="inputLogin" />
+        <input type="password" placeholder="Parol" class="inputPassword" />
+        <button class="logIn">Kirish</button>
+        <p style="font-size: 1.4rem">
+          If you don't have an account,
+          <button class="signUpBtn">Sign up</button>
+        </p>
+      </div>
+      <div class="signUp sign none">
+        <input type="text" placeholder="First name" class="firstName" />
+        <input type="text" placeholder="Last name" class="lastName" />
+        <input type="password" placeholder="Password" class="signUpPassword" />
+        <input
+          type="password"
+          placeholder="Confirm password"
+          class="confirmPassword"
+        />
+        <input type="number" placeholder="99 555 11 22" class="phoneNum" />
+        <button class="createNewAcc">Create</button>
+      </div>
+      <form action="#" class="formSignUp sign none">
+        <input type="number" placeholder="card number" class="signUpCardNum" />
+        <input type="month" placeholder="00 / 00" class="expiryDateInput" />
+        <select class="newCurrencySelect">
+          <option value="UZS">UZS</option>
+          <option value="USD">USD</option>
+        </select>
+        <button class="signUpLastBtn" type="submit">OK</button>
+      </form>
+      <div class="backDiv sign none">
+        <button class="back">Back</button>
+      </div>
+    </div>
+
+    <div class="modal_container">
+      <div class="modal">
+        <div class="modalContent">
+          <p class="modalP">
+            Login yoki parol xato!!! <br />
+            Iltimos qaytadan urinib ko`ring
+          </p>
+          <button class="modalBtn">Ok</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_container modalVerif">
+      <div class="modal">
+        <div class="modalContent">
+          <input
+            type="number"
+            placeholder="Enter verification code"
+            class="verificationCode"
+          />
+          <span style="font-size: 4rem" class="interval">15</span>
+          <div class="verifBtns">
+            <button class="modalBtn verifOk">Ok</button>
+            <button class="modalBtn verifCansel">Cansel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

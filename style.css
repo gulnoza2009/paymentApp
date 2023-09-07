@@ -1,0 +1,327 @@
+/* ********************* FONT ********************* */
+@font-face {
+  font-family: Poppins;
+  src: url(./font/Poppins-Regular.ttf);
+}
+
+/* ********************* ROOT ********************* */
+:root {
+  --main-color: #710984;
+  --second-color: #340f72;
+  --gardient-color: #041464;
+  --input-color: #9b96b7;
+  --white: #fff;
+  --time-color: #787878;
+  --green: #068822;
+  --red: #b80d0d;
+}
+
+/* ******************** BASIC ******************** */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Poppins;
+}
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* ******************** NAVBAR ******************** */
+nav {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.nav_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 0;
+}
+h3 {
+  color: var(--second-color);
+  font-size: 24px;
+  font-weight: 500;
+}
+.logInbox,
+.signUp,
+.backDiv,
+.formSignUp {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+input,
+nav button,
+.sign button {
+  display: flex;
+  width: 203px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--input-color);
+  background: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+}
+nav button,
+.sign button {
+  border-radius: 6px;
+  background: var(--main-color);
+  justify-content: center;
+  color: var(--white);
+}
+.back {
+  margin-top: 2rem;
+}
+
+/* ******************** MAIN ******************** */
+main {
+  display: flex;
+  gap: 15rem;
+  padding: 4rem 0 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.my_card {
+  width: 427px;
+  position: absolute;
+  padding-bottom: 4rem;
+  left: -80rem;
+}
+.history {
+  position: absolute;
+  padding-bottom: 4rem;
+  right: -80rem;
+}
+.my_card,
+.history {
+  transition: all 0.8s ease;
+}
+
+.credit_card {
+  display: flex;
+  width: 427px;
+  height: 251px;
+  padding: 20px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 19px;
+  border-radius: 20px;
+  background: linear-gradient(44deg, var(--gardient-color) 0%, #94058e 100%);
+  color: var(--white);
+  margin-bottom: 8rem;
+}
+.credit_card * {
+  display: block;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.credit_card > span {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+}
+.number {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.send_money {
+  display: flex;
+  flex-direction: column;
+  gap: 3.9rem;
+}
+.send_money * {
+  width: 100%;
+}
+.send_money input {
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 2px solid #e5e3f1;
+  padding: 6px 0;
+}
+.send_money button {
+  padding: 17px 72px;
+  gap: 10px;
+  border-radius: 6px;
+  background: var(--main-color);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.control {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.control div {
+  display: flex;
+  width: 259px;
+  padding: 29px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+}
+.income {
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.72px;
+}
+.outgoings {
+  color: var(--red);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.72px;
+}
+.outgoingsBox {
+  background: rgba(184, 13, 13, 0.1);
+}
+.incomeBox {
+  background: rgba(6, 136, 34, 0.1);
+}
+ul {
+  height: 50.6rem;
+  border-radius: 6px;
+  background: #f8f6ff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.54px;
+}
+.date {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9b96b7;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #d1caf4;
+}
+
+.none {
+  display: none;
+}
+
+.modal_container {
+  height: 100%;
+  width: 100%;
+  top: -100rem;
+  position: absolute;
+  transition: top 0.8s ease;
+  display: flex;
+  justify-content: center;
+}
+.modal {
+  height: 65%;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: end;
+  border-radius: 0px 0px 17px 17px;
+}
+.modalContent {
+  background-color: var(--white);
+  width: 100%;
+  height: 20rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 8px solid var(--main-color);
+}
+.modalP {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #340f72;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.modalBtn {
+  width: 200px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 8px;
+  background: var(--main-color);
+  color: var(--white);
+}
+.verifBtns {
+  display: flex;
+  gap: 1rem;
+}
+
+.overflow {
+  overflow: visible;
+}
+.show {
+  top: 0;
+  position: fixed;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
